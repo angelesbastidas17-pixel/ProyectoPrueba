@@ -1,14 +1,6 @@
-var color = prompt ("Ingrese un color");
+var contador = prompt("Ingresa un numero <10: ");
 
-switch(color){
-
-    case "rojo":
-        console.log("color rojo sojo");
-        break;
-    case "azul":
-        console.log("azuliño");
-        break;
-    default:
-        console.log("el color ingresado no es valido");
-        break;
+while(contador <=10){
+    console.log("va por: "+contador);
+    contador++;
 }

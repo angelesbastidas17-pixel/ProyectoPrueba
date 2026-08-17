@@ -1,5 +1,3 @@
-var contador = prompt("Ingresa un numero <10: ");
+var respuesta = prompt("Ya hiciste eso hoy?: ");
 
-for(var i=0;i<contador;i++){
-    console.log("va en: " + contador);
-}
+alert("su respuesta fue: "+respuesta);

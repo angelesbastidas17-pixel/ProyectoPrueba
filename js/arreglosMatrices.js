@@ -1,4 +1,26 @@
-let miVector = ["Angekes","B","Hola","chao","sayonara"];
-console.log(miVector[4]);
-let miMatriz = [[1,2,3],[4,5,6],[7,8,9]];
-console.log(miMatriz[1][1]);
+let vector = new Array(3);
+vector[0] = "fuck";
+
+var matriz = new Array(3);
+for(let i = 0;i<3;i++){
+    matriz[i] = new Array(3);
+}
+
+for(let i=0;i<3;i++){
+    for(let j=0;j<3;j++){
+        matriz[i][j] = (i+1);
+    }
+}
+console.log(matriz);
+
+var num = prompt("numero: ");
+if(num >1){
+    let persona0 = ["Angeles","Cumanda"];
+    let persona1 = ["Bastidas","Piedra"];
+
+    let matriz = [persona0,persona1];
+
+    console.log(matriz); // muere aqui
+}
+
+console.log(matriz); // la misma del inicio

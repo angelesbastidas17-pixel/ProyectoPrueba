@@ -1,5 +1,6 @@
 let vector = new Array(3);
 vector[0] = "fuck";
+console.log(vector.length);
 
 var matriz = new Array(3);
 for(let i = 0;i<3;i++){

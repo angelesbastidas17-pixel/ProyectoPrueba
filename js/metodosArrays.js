@@ -15,3 +15,6 @@ let cosasTodas = cosas.concat(cosas2);
 console.log(cosasTodas);
 console.log(cosasTodas.reverse());
 console.log(cosasTodas.sort());
+
+let cosasTodas2 = cosas2.concat(cosasConO);
+console.log(cosasTodas2);

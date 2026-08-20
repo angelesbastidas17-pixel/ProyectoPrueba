@@ -1,8 +1,10 @@
-function preparadoONo(promedio){
-    if(promedio>=70){
-        return true;
-    }else{
-        return false
+function preparadoONo(nombres,habilidades){
+    for(i = 0; i<nombres.length;i++){
+        if(calcularPromedio(habilidades[i])>=70){
+            console.log("el pokemon "+nombres[i]+" supera el promedio con: "+calcularPromedio(habilidades[i]))
+        }else{
+            console.log("el pokemon "+nombres[i]+" No supera el promedio con: "+calcularPromedio(habilidades[i]))
+        }
     }
 }
 
@@ -17,9 +19,4 @@ function calcularPromedio(habilidad){
 let nombres = ["pikachu","Charmi","Squirrel"];
 let habilidades = [[50,70,90],[100,35,56],[54,22,89]];
 
-for(i = 0; i<nombres.length;i++){
-    console.log(nombres[i]);
-    let prom = calcularPromedio(habilidades[i]);
-    console.log("habilidades: "+habilidades[i]+" y el promedio: "+prom);
-    console.log("Esta preparado? "+preparadoONo(prom));
-}
+preparadoONo(nombres,habilidades);

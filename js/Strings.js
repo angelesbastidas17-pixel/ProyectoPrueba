@@ -24,14 +24,19 @@ function darVuelta(modelo){
 
 let nombre = prompt("Un nombre: ")
 
-let noEstaNombre = true
-for(let i=0;i<nombres.length;i++){
-    if((nombre.toLowerCase() === nombres[i].toLowerCase())==true){
-        noEstaNombre = false
+estaONo(nombres,nombre)
+
+function estaONo(nombres,nombre){
+    let noEstaNombre = true
+    for(let i=0;i<nombres.length;i++){
+        if((nombre.toLowerCase() === nombres[i].toLowerCase())==true){
+            noEstaNombre = false
+        }
+    }
+    if(noEstaNombre===false){
+        console.log("El nombre si esta")
+    }else{
+        console.log("El nombre no esta")
     }
 }
-if(noEstaNombre===false){
-    console.log("El nombre si esta")
-}else{
-    console.log("El nombre no esta")
-}
+

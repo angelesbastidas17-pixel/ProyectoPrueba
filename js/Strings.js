@@ -27,9 +27,6 @@ let nombre = prompt("Un nombre: ")
 let noEstaNombre = true
 for(let i=0;i<nombres.length;i++){
     if((nombre.toLowerCase() === nombres[i].toLowerCase())==true){
-        console.log("nombre: "+nombre.toLocaleLowerCase())
-        console.log("nombres[i]: "+nombres[i].toLowerCase())
-        console.log("comparación: "+nombre.toLowerCase() === nombres[i].toLowerCase())
         noEstaNombre = false
     }
 }

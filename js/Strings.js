@@ -22,21 +22,22 @@ function darVuelta(modelo){
 // console.log(darVuelta(nombres))
 // console.log(darVuelta(numeros))
 
+
+
 let nombre = prompt("Un nombre: ")
 
-estaONo(nombres,nombre)
+let nombresTrans = nombres.map(nombre => nombre.toLowerCase())
 
-function estaONo(nombres,nombre){
-    let noEstaNombre = true
-    for(let i=0;i<nombres.length;i++){
-        if((nombre.toLowerCase() === nombres[i].toLowerCase())==true){
-            noEstaNombre = false
-        }
-    }
-    if(noEstaNombre===false){
-        console.log("El nombre si esta")
-    }else{
-        console.log("El nombre no esta")
-    }
-}
+let tieneEseNombre = nombresTrans.includes(nombre.toLocaleLowerCase());
+console.log(tieneEseNombre)
+
+
+// for(let i=0;i<nombres.length;i++){
+//     let tieneEseNombre = nombres[i].includes(nombre);
+//     if(tieneEseNombre==true){
+//         console.log("El nombre si esta")
+//     }else{
+//         console.log("El nombre no esta")
+//     }
+// }
 
